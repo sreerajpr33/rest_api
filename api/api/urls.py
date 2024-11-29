@@ -20,6 +20,9 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.sample_fun),
+    path('sample',views.sample_fun),
     path('model_views',views.model_view),
+    path('update/<id>',views.update_view),
+    path('',views.fun1),
+    path('gpd/<id>',views.fun2),
 ]
